@@ -6,4 +6,9 @@ document.addEventListener("DOMContentLoaded", function () {
         alert("Hola! soy el div");
     });
 
+    const btn = document.getElementById("btn");
+
+    btn.addEventListener("click", function(event){
+        event.stopPropagation();
+    })
 });
